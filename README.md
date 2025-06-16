@@ -241,7 +241,7 @@ var covariates_2018_garut = covariates_2018.clip(aoi)
 
 // 5.1.1 running classification on class 1
 
-var training_samples = samples_class1.map(make_class_property_num);
+var training_samples = features_simplified_c1.map(make_class_property_num);
 
 var prob_class1 = train_classify_prob(
   training_samples,
